@@ -1,0 +1,50 @@
+P:/DSD/LAB2/g05_minimum3.vhd {1 {vcom -work work -2002 -explicit P:/DSD/LAB2/g05_minimum3.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity g05_minimum3
+-- Compiling architecture behavior of g05_minimum3
+
+} {} {}} P:/DSD/LAB2/simulation/modelsim/g05_minimum3.vht {1 {vcom -work work -2002 -explicit P:/DSD/LAB2/simulation/modelsim/g05_minimum3.vht
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity g05_minimum3_vhd_tst
+-- Compiling architecture g05_minimum3_arch of g05_minimum3_vhd_tst
+
+} {} {}} P:/DSD/LAB2/g05_num1s.vhd {1 {vcom -work work -2002 -explicit P:/DSD/LAB2/g05_num1s.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity g05_num1s
+-- Compiling architecture behavior of g05_num1s
+
+} {} {}} P:/DSD/LAB2/g05_num_matches.vhd {1 {vcom -work work -2002 -explicit P:/DSD/LAB2/g05_num_matches.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity g05_num_matches
+-- Compiling architecture behavior of g05_num_matches
+
+} {} {}} P:/DSD/LAB2/simulation/modelsim/g05_num_matches.vht {1 {vcom -work work -2002 -explicit P:/DSD/LAB2/simulation/modelsim/g05_num_matches.vht
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity g05_num_matches_vhd_tst
+-- Compiling architecture g05_num_matches_arch of g05_num_matches_vhd_tst
+
+} {} {}} P:/DSD/LAB2/g05_comp6.vhd {1 {vcom -work work -2002 -explicit P:/DSD/LAB2/g05_comp6.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity g05_comp6
+-- Compiling architecture bdf_type of g05_comp6
+
+} {} {}}
