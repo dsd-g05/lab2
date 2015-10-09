@@ -150,9 +150,6 @@ BEGIN
 	G3 <= "000";
 	G4 <= "000";
 	wait for 10 ns;
-	
-	
-	
 WAIT;                                                        
 END PROCESS always;                                          
 END g05_num_matches_arch;

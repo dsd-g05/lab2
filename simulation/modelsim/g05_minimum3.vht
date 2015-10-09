@@ -26,7 +26,7 @@
 
 LIBRARY ieee;                                               
 USE ieee.std_logic_1164.all;
-use IEEE.NUMERIC_STD.all;                                 
+USE IEEE.NUMERIC_STD.all;                                 
 
 ENTITY g05_minimum3_vhd_tst IS
 END g05_minimum3_vhd_tst;
