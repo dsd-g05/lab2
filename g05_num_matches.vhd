@@ -10,7 +10,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity g05_num_matches is
-    port(
+    port (
         P1, P2, P3, P4 : in std_logic_vector(2 downto 0);
         G1, G2, G3, G4 : in std_logic_vector(2 downto 0);
         N : out std_logic_vector(2 downto 0)
@@ -32,26 +32,14 @@ architecture behavior of g05_num_matches is
         );
     end component;
     signal X : std_logic_vector(3 downto 0);
-    signal PP1 : std_logic_vector(5 downto 0);
-    signal GG1 : std_logic_vector(5 downto 0);
-    signal PP2 : std_logic_vector(5 downto 0);
-    signal GG2 : std_logic_vector(5 downto 0);
-    signal PP3 : std_logic_vector(5 downto 0);
-    signal GG3 : std_logic_vector(5 downto 0);
-    signal PP4 : std_logic_vector(5 downto 0);
-    signal GG4 : std_logic_vector(5 downto 0);
 begin
-    PP1 <= ("000"&P1);
-    GG1 <= ("000"&G1);
-    PP2 <= ("000"&P2);
-    GG2 <= ("000"&G2);
-    PP3 <= ("000"&P3);
-    GG3 <= ("000"&G3);
-    PP4 <= ("000"&P4);
-    GG4 <= ("000"&G4);
-    compA : g05_comp6 port map(A => PP1, B => GG1, AeqB => X(0));
-    compB : g05_comp6 port map(A => PP2, B => GG2, AeqB => X(1));
-    compC : g05_comp6 port map(A => PP3, B => GG3, AeqB => X(2));
-    compD : g05_comp6 port map(A => PP4, B => GG4, AeqB => X(3));
+    compX0 : g05_comp6 port map(A(5 downto 3) => "000", A(2 downto 0) => P1,
+                                B(5 downto 3) => "000", B(2 downto 0) => G1, AeqB => X(0));
+    compX1 : g05_comp6 port map(A(5 downto 3) => "000", A(2 downto 0) => P2,
+                                B(5 downto 3) => "000", B(2 downto 0) => G2, AeqB => X(1));
+    compX2 : g05_comp6 port map(A(5 downto 3) => "000", A(2 downto 0) => P3,
+                                B(5 downto 3) => "000", B(2 downto 0) => G3, AeqB => X(2));
+    compX3 : g05_comp6 port map(A(5 downto 3) => "000", A(2 downto 0) => P4,
+                                B(5 downto 3) => "000", B(2 downto 0) => G4, AeqB => X(3));
     matches : g05_num1s port map(X => X, num1s => N);
 end behavior;
