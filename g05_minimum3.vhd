@@ -10,8 +10,9 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity g05_minimum3 is
-    port( N, M : in std_logic_vector(2 downto 0);
-            min : out std_logic_vector(2 downto 0)
+    port ( 
+        N, M : in std_logic_vector(2 downto 0);
+        min : out std_logic_vector(2 downto 0)
     );
 end g05_minimum3;
 

@@ -9,12 +9,10 @@
 library ieee;
 use ieee.std_logic_1164.all; 
 
-library work;
-
 entity g05_num1s is 
-    port(
-        X :  in  std_logic_vector(3 downto 0);
-        num1s :  out  std_logic_vector(2 downto 0)
+    port (
+        X : in std_logic_vector(3 downto 0);
+        num1s : out std_logic_vector(2 downto 0)
     );
 end g05_num1s;
 
