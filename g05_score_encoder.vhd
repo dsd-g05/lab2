@@ -29,7 +29,7 @@ entity g05_score_encoder is
 		score_code : out std_logic_vector(3 downto 0);
 		num_exact_matches : in std_logic_vector(2 downto 0);
 		num_color_matches : in std_logic_vector(2 downto 0)
-		);
+	);
 end g05_score_encoder;
 
 architecture behavior of g05_score_encoder is
@@ -37,7 +37,7 @@ architecture behavior of g05_score_encoder is
 begin
 	score <= num_exact_matches&num_color_matches; 
 	process(score)
-	begin
+    begin
 		case score is
 			when "100000" =>
 				score_code <= "0000";

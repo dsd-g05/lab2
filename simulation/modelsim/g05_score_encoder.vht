@@ -25,7 +25,8 @@
 -- 
 
 LIBRARY ieee;                                               
-USE ieee.std_logic_1164.all;                                
+USE ieee.std_logic_1164.all;
+USE IEEE.NUMERIC_STD.all;                               
 
 ENTITY g05_score_encoder_vhd_tst IS
 END g05_score_encoder_vhd_tst;
@@ -49,19 +50,16 @@ BEGIN
 	num_color_matches => num_color_matches,
 	num_exact_matches => num_exact_matches,
 	score_code => score_code
-	);
-init : PROCESS                                               
--- variable declarations                                     
-BEGIN                                                        
-        -- code that executes only once                      
-WAIT;                                                       
-END PROCESS init;                                           
-always : PROCESS                                              
--- optional sensitivity list                                  
--- (        )                                                 
--- variable declarations                                      
+	);                                          
+always : PROCESS                                                                                   
 BEGIN                                                         
-        -- code executes for every event on sensitivity list  
+    FOR i IN 0 TO 8 LOOP
+        num_color_matches <= STD_LOGIC_VECTOR(TO_UNSIGNED(i,3));
+        FOR j IN 0 TO 8 LOOP
+            num_exact_matches <= STD_LOGIC_VECTOR(TO_UNSIGNED(j,3));
+            wait for 10 ns;
+        END LOOP;
+    END LOOP;
 WAIT;                                                        
 END PROCESS always;                                          
 END g05_score_encoder_arch;
