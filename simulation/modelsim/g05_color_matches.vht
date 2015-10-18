@@ -71,18 +71,88 @@ BEGIN
 	P3 => P3,
 	P4 => P4
 	);
-init : PROCESS                                               
--- variable declarations                                     
-BEGIN                                                        
-        -- code that executes only once                      
-WAIT;                                                       
-END PROCESS init;                                           
-always : PROCESS                                              
--- optional sensitivity list                                  
--- (        )                                                 
--- variable declarations                                      
+                                         
+always : PROCESS                                                                                   
 BEGIN                                                         
-        -- code executes for every event on sensitivity list  
+	P1 <= "000";
+	P2 <= "000";
+	P3 <= "000";
+	P4 <= "000";
+	G1 <= "000";
+	G2 <= "000";
+	G3 <= "000";
+	G4 <= "000";
+	wait for 10 ns;
+	
+	P1 <= "000";
+	P2 <= "001";
+	P3 <= "001";
+	P4 <= "001";
+	G1 <= "000";
+	G2 <= "000";
+	G3 <= "000";
+	G4 <= "000";
+	wait for 10 ns;
+	
+	P1 <= "000";
+	P2 <= "010";
+	P3 <= "000";
+	P4 <= "010";
+	G1 <= "000";
+	G2 <= "000";
+	G3 <= "000";
+	G4 <= "000";
+	wait for 10 ns;
+	
+	P1 <= "010";
+	P2 <= "010";
+	P3 <= "010";
+	P4 <= "100";
+	G1 <= "010";
+	G2 <= "010";
+	G3 <= "010";
+	G4 <= "010";
+	wait for 10 ns;
+	
+	P1 <= "100";
+	P2 <= "000";
+	P3 <= "000";
+	P4 <= "000";
+	G1 <= "100";
+	G2 <= "000";
+	G3 <= "000";
+	G4 <= "000";
+	wait for 10 ns;
+	
+	P1 <= "000";
+	P2 <= "000";
+	P3 <= "100";
+	P4 <= "000";
+	G1 <= "000";
+	G2 <= "000";
+	G3 <= "001";
+	G4 <= "100";
+	wait for 10 ns;
+	
+	P1 <= "000";
+	P2 <= "100";
+	P3 <= "100";
+	P4 <= "100";
+	G1 <= "100";
+	G2 <= "100";
+	G3 <= "100";
+	G4 <= "100";
+	wait for 10 ns;
+	
+	P1 <= "100";
+	P2 <= "011";
+	P3 <= "100";
+	P4 <= "000";
+	G1 <= "000";
+	G2 <= "100";
+	G3 <= "000";
+	G4 <= "000";
+	wait for 10 ns;
 WAIT;                                                        
 END PROCESS always;                                          
 END g05_color_matches_arch;
