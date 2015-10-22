@@ -1,4 +1,4 @@
--- Descp.: counts the number of color matches
+-- Descp. counts the number of color matches
 --
 -- entity name: g05_color_matches
 --
